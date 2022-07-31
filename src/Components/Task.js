@@ -1,13 +1,18 @@
 import { FaTimes } from "react-icons/fa";
 
-const Task = ({ task }) => {
-  return (
-    <div className="task">
-        <h8>{task.text}</h8>
-        <FaTimes className="fatimes"/>
-        <h6>{task.day}</h6>
-    </div>
-  )
-}
+const Task = ({ task, deleteTask }) => {
+    return (
+        <div className="task">
+            <h3>
+                {task.text}
+                <FaTimes className="fatimes"
+                style={{ color: 'rgb(210, 43, 43)',
+                fontSize: "30px"}} 
+                onClick={() => deleteTask(task.id)} />
+            </h3>
+            <p>{task.day}</p>
+        </div>
+    );
+};
 
-export default Task
+export default Task;
