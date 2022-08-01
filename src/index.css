@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+html,body{
+  height: 100%;
+}
+
 .navbar {
   max-width: 100%;
   min-height: 30px;
@@ -17,7 +21,7 @@
 }
 
 .outside-container {
-  height: 100vh;
+  height: 100%;
   background-color: #F1F1F1;
   color: #E2DCC8;
   font-size: 40px;
@@ -77,5 +81,52 @@
 
 }
 
-.fatimes {
+.task.reminder {
+  border-left: 5px solid red;
 }
+
+.user-form {
+  margin-bottom: 30px;
+}
+
+.form-control {
+  color: #100F0F;
+  margin: 10px 5px 5px 5px;
+  font-family: 'Volkhov', serif;
+  font-size: 20px;
+}
+
+.form-control input {
+  width: 98.5%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+#checkbox input {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+#actual-checkbox {
+  height: 40px;
+  width: 40px;
+}
+
+.ending-with-saveTask {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+}
+
+#submit {
+  width: 100px;
+  background: #000;
+  color: #F1F1F1;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
