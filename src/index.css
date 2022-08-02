@@ -64,6 +64,9 @@ html,body{
 }
 
 .task {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
   background-color: #0F3D3E;
   margin: 5px;
   cursor: pointer;
@@ -78,7 +81,14 @@ html,body{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
+.h3Text {
+  max-width: 498px;
+}
+
+.task p {
+  max-width: 498px;
 }
 
 .task.reminder {
@@ -122,7 +132,7 @@ html,body{
 }
 
 #submit {
-  width: 100px;
+  width: 125px;
   background: #000;
   color: #F1F1F1;
   border-radius: 5px;

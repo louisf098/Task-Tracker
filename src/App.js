@@ -21,7 +21,7 @@ function App() {
         },
         {
             id: 3,
-            text: 'weeee',
+            text: 'weeeeeeeeeeee',
             day: 'may 20th',
             reminder: false,
         },
@@ -36,7 +36,7 @@ function App() {
             text: 'jed',
             day: 'i love ^',
             reminder: false,
-        }
+        },
     ])
 
     const setReminder = (id) => {
@@ -46,13 +46,19 @@ function App() {
     const deleteTask = (id) => {
         setTasks(tasks.filter((task) => task.id !== id))
     }
+
+    const addTask = (task) => {
+        const id = Math.floor(Math.random() * 1000) + 5
+        const newTask = { id, ...task }
+        setTasks([...tasks, newTask])
+    }
   
     return (
         <div className="outside-container">
             <Navbar />
             <div className="container">
                 <Header />
-                <AddNewTask />
+                <AddNewTask addNew={addTask}/>
                 <Tasks tasks={tasks} deleteTask={deleteTask} 
                 toggleReminder={setReminder} />
             </div>

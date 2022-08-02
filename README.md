@@ -5,5 +5,5 @@ Customized with HTML & CSS and utilizes javascript for user inputs.
 
 ### Features
 - Adding Tasks
-- Removing Tasks
+- Removing Tasks (double click task)
 - Setting Reminders (differentiate between reminder tasks and non-reminder tasks)
