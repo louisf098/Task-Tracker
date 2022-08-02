@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "text": "Going on a walk with my dog",
+      "day": "August 5th 5PM",
+      "reminder": true,
+      "id": 1
+    },
+    {
+      "text": "Birthday party at Jacob's",
+      "day": "August 20th",
+      "reminder": false,
+      "id": 2
+    },
+    {
+      "text": "Visit Grandma",
+      "day": "August 21st",
+      "reminder": false,
+      "id": 3
+    }
+  ]
+}

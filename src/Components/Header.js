@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-const Header = ({ onAdd }) => {
+const Header = ({ onAdd, showAddTask, text }) => {
     return (
         <header className="header">
             <h2
@@ -10,11 +10,12 @@ const Header = ({ onAdd }) => {
                     fontWeight: "bold",
                     fontSize: "50px",
                     textDecoration: "underline",
-                }}
+                    textShadow:'2px 2px #888888'
+                }} 
             >
                 Tasks
             </h2>
-            <Button onClick={onAdd} />
+            <Button text={showAddTask ? 'Close' : 'Add'} onClick={onAdd} />
         </header>
     );
 };

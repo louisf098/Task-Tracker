@@ -22,7 +22,6 @@ html,body{
 }
 
 .outside-container {
-  height: 100%;
   color: #E2DCC8;
   font-size: 40px;
   font-family: 'Ubuntu', sans-serif;
@@ -30,10 +29,10 @@ html,body{
 
 .container {
   max-width: 600px;
+  min-height: 300px;
   margin: 50px auto;
   border: 1px solid black;
   border-radius: 5%;
-  min-height: 400px;
   padding: 20px;
   background-color: #E2DCC8;
 }
@@ -53,6 +52,7 @@ html,body{
   font-size: 18px;
   font-family: inherit;
   margin: 10px;
+  box-shadow: 4px 3px #888888;
 }
 
 .btn:focus {
@@ -75,6 +75,7 @@ html,body{
   font-family: 'Volkhov', serif;
   font-size: 20px;
   border-radius: 5px;
+  box-shadow: 4px 3px #888888c2;
 }
 
 .task h3 {
@@ -112,6 +113,11 @@ html,body{
   margin: 5px;
   padding: 3px 7px;
   font-size: 17px;
+  box-shadow: 4px 3px #888888;
+}
+
+.form-control input:hover {
+  outline-width: 0;
 }
 
 #checkbox input {
@@ -138,5 +144,9 @@ html,body{
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
+}
+
+#submit:active {
+  transform: scale(0.98);
 }
 
